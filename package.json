@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --watchAll=false",
+    "test": "(react-scripts test --runInBand --watchAll=false --outputFile=test_results.log --json); (echo \"\" >> test_results.log); (date >> test_results.log)",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
